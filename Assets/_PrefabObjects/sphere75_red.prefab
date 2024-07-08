@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3999965800418214659}
   - component: {fileID: 6811333161788559852}
   m_Layer: 0
-  m_Name: sphere75_blue
+  m_Name: sphere75_red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 551a17f6e55ae4d578fdbd4cebb96fde, type: 2}
+  - {fileID: 2100000, guid: 09104880a5490468b99d77bf4708ea55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

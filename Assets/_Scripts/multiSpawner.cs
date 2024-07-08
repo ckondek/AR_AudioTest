@@ -8,9 +8,9 @@ public class multiSpawner : MonoBehaviour
 
     public GameObject [] objects;
     public int amount;
-    public int xPosition;
-    public int yPosition;
-    public int zPosition;
+    public float xPosition;
+    public float yPosition;
+    public float zPosition;
 
 
 
