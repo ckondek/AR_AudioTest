@@ -8,6 +8,9 @@ public class multiSpawner : MonoBehaviour
 
     public GameObject [] objects;
     public int amount;
+    public int xPosition;
+    public int yPosition;
+    public int zPosition;
 
 
 
@@ -16,7 +19,7 @@ public class multiSpawner : MonoBehaviour
         for (int x = 0; x < amount; x++)
         {
             int index = (int)Random.Range(0, objects.Length);
-            Instantiate(objects[index], new Vector3(0,0,0), Quaternion.identity);
+            Instantiate(objects[index], new Vector3(xPosition,yPosition,zPosition), Quaternion.identity);
            
         }
 
