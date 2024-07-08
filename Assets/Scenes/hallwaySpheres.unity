@@ -638,6 +638,8 @@ GameObject:
   - component: {fileID: 572062586}
   - component: {fileID: 572062585}
   - component: {fileID: 572062587}
+  - component: {fileID: 572062588}
+  - component: {fileID: 572062589}
   m_Layer: 0
   m_Name: multiSpawnControl
   m_TagString: Untagged
@@ -660,7 +662,7 @@ MonoBehaviour:
   objects:
   - {fileID: 6031533695855978432, guid: d51d0e80939604b55a8781c2e3d6f176, type: 3}
   - {fileID: 6031533695855978432, guid: 8984ce4bb67c04c9ba093bdb3476d10b, type: 3}
-  amount: 120
+  amount: 50
   xPosition: 0
   yPosition: 2
   zPosition: 4
@@ -692,11 +694,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objects:
+  - {fileID: 6031533695855978432, guid: aa232dfc038224c5e86acc4d49e9e467, type: 3}
+  amount: 4
+  xPosition: 0
+  yPosition: 2.6
+  zPosition: 4
+--- !u!114 &572062588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572062584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0e53d1687c54fa487c43dbc08e9a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects:
   - {fileID: 7528203867554568850, guid: 337c28e35f05d45348b312f054c2f151, type: 3}
   amount: 100
   xPosition: 0
-  yPosition: 3
+  yPosition: 2.6
   zPosition: 4
+--- !u!114 &572062589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572062584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0e53d1687c54fa487c43dbc08e9a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects:
+  - {fileID: 6031533695855978432, guid: 8984ce4bb67c04c9ba093bdb3476d10b, type: 3}
+  - {fileID: 6031533695855978432, guid: d51d0e80939604b55a8781c2e3d6f176, type: 3}
+  amount: 40
+  xPosition: 0
+  yPosition: 2.6
+  zPosition: 5
 --- !u!1 &604638511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,6 +1335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1372262876}
   - component: {fileID: 1372262875}
+  - component: {fileID: 1372262877}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -1336,6 +1376,22 @@ Transform:
   - {fileID: 1845984529}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1372262877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372262874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a025b51106444e18fb408fde19ac53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AutomaticPlacement: 1
+  m_EnvironmentTextureFilterMode: 2
+  m_EnvironmentTextureHDR: 1
+  m_DebugPrefab: {fileID: 0}
 --- !u!1 &1413991115
 GameObject:
   m_ObjectHideFlags: 0
