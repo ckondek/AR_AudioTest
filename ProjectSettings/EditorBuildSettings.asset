@@ -14,9 +14,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BasicAR_pureTon.unity
     guid: e284eae4b0abe44fb8f410e86ac80d48
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BasicSpheres.unity
     guid: 38bb40f7d592e4429bac94fc40da3042
+  - enabled: 1
+    path: Assets/Scenes/BasicScene.unity
+    guid: e14e5d95f578346eb8ed06f002d06de1
+  - enabled: 1
+    path: Assets/Cube.unity
+    guid: d2d20be1abc174076b0beb1f8c6afddb
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1aacb881599e84d2e8a90f7c529a9646, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 728de2c8d632b4bd494468a7e942aa6a, type: 2}
