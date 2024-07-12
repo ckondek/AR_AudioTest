@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 1752659706069435053}
   - component: {fileID: 913853706457258417}
   - component: {fileID: 5011644167275297570}
+  - component: {fileID: 3656632272454077077}
   m_Layer: 0
-  m_Name: AudioCube
+  m_Name: CricketCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7f5890b3f1e314912bee35a74dd64d79, type: 2}
+  - {fileID: 2100000, guid: 6ead16a5d97fc473c8ac70722afe9d14, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -216,3 +217,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 100
+--- !u!114 &3656632272454077077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7102291391851515538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6b8e99666b5e4035957c3fd4c7eeaec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 2dc7fdbe099fe4d8a81cee651072205a, type: 3}
+  - {fileID: 8300000, guid: 8ae67462f05584364a3639b5dca4adc4, type: 3}
+  - {fileID: 8300000, guid: 04145d430742e4bdb9c4106fa5458fd0, type: 3}
+  - {fileID: 8300000, guid: 986aef622d2b74f4aa6d2bd6481bfcb3, type: 3}
+  - {fileID: 8300000, guid: 77a57317941a34b92a36e0e648ac6856, type: 3}
+  - {fileID: 8300000, guid: 4fe609915c58f40f8803ca22c74a23ee, type: 3}
+  - {fileID: 8300000, guid: 0487d0cb699f24cf3949063fa4043768, type: 3}
+  - {fileID: 8300000, guid: 7a4bc6b3cc36d474a8e2e2dc955ccc4b, type: 3}
+  - {fileID: 8300000, guid: 226a108cbcd63496db084a601d8802e4, type: 3}
