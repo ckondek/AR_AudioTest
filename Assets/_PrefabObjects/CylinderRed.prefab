@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2875718563453294115}
   - component: {fileID: 8354668553198423585}
   - component: {fileID: 3644689731218547764}
+  - component: {fileID: 3295728226550404111}
   m_Layer: 0
   m_Name: CylinderRed
   m_TagString: Untagged
@@ -256,3 +257,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3295728226550404111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7196061301266946827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7a1bb764f0454c1da68bddd9aa70aeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 100
