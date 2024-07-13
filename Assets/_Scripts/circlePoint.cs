@@ -12,11 +12,11 @@ public class circlePoint : MonoBehaviour
     void Update()
     {
        
-       float x = rotationCenter.transform.position.x * Mathf.Sin(angle) * radius;
+       float x = rotationCenter.transform.position.x + Mathf.Cos(angle) * radius;
        float y = rotationCenter.transform.position.y;
-       float z = rotationCenter.transform.position.z * Mathf.Cos(angle) * radius; 
+       float z = rotationCenter.transform.position.z + Mathf.Sin(angle) * radius; 
        angle += speed * Time.deltaTime;
 
-       transform.position = new Vector3(x,y,z);
+       this.transform.position = new Vector3(x,y,z);
     }
 }

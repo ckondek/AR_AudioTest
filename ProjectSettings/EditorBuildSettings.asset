@@ -29,9 +29,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/singleTrigger.unity
     guid: cc6adc153d92d435385279d70ec6c296
-  - enabled: 1
+  - enabled: 0
     path: Assets/longSwebung.unity
     guid: d0e9eb86e7ce544d2b2b7f6eda6ca8d2
+  - enabled: 1
+    path: Assets/Scenes/rainforest1.unity
+    guid: 3cf74f9d3f7414b0bb945a269f02a616
+  - enabled: 0
+    path: Assets/Scenes/lineRenderTest.unity
+    guid: 7d9e6dde243084bcda871592945cc7f8
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1aacb881599e84d2e8a90f7c529a9646, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 728de2c8d632b4bd494468a7e942aa6a, type: 2}

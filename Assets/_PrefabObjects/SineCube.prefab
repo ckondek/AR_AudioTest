@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 7900029414484699525}
   - component: {fileID: 1752659706069435053}
   - component: {fileID: 913853706457258417}
-  - component: {fileID: 1256787685155429790}
-  - component: {fileID: 2498980129177783945}
+  - component: {fileID: 3656632272454077077}
   m_Layer: 0
-  m_Name: FlyLoopCube
+  m_Name: SineCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -65,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7f5890b3f1e314912bee35a74dd64d79, type: 2}
+  - {fileID: 2100000, guid: 6ead16a5d97fc473c8ac70722afe9d14, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102,7 +101,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -118,18 +117,18 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8ba78fc3a0378493cb227259c5ba24fc, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.612
+  m_Pitch: 0.66
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 0.3
+  MaxDistance: 0.8
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -204,23 +203,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1256787685155429790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7102291391851515538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c3109555661447beb322749158d79d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationCenter: {fileID: 186463001428014857, guid: b844e173cfe604842a1655203139b5c5, type: 3}
-  radius: 2
-  speed: 1
-  angle: 0
---- !u!114 &2498980129177783945
+--- !u!114 &3656632272454077077
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,6 +216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: ab6035bd80ed945148d7d21df295d78e, type: 3}
-  - {fileID: 8300000, guid: 8ba78fc3a0378493cb227259c5ba24fc, type: 3}
-  - {fileID: 8300000, guid: 812e4acff8ba54ca2ba1797458238c5b, type: 3}
+  - {fileID: 8300000, guid: ddb99cb2894d2478a9185a71d98f0a95, type: 3}
+  - {fileID: 8300000, guid: 5b2036c61679c4815aed00d72c75ea48, type: 3}
+  - {fileID: 8300000, guid: 47f7665487e1d4de79037e7a6e688106, type: 3}
