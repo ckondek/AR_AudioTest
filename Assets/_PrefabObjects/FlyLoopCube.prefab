@@ -128,8 +128,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 0.03
+  MaxDistance: 0.4
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -233,6 +233,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: ab6035bd80ed945148d7d21df295d78e, type: 3}
-  - {fileID: 8300000, guid: 8ba78fc3a0378493cb227259c5ba24fc, type: 3}
-  - {fileID: 8300000, guid: 812e4acff8ba54ca2ba1797458238c5b, type: 3}
+  - {fileID: 8300000, guid: 7ed5b8a5fbec240fd9b56cf1b7030bcd, type: 3}
+  - {fileID: 8300000, guid: fc449fbee8ced4994840c7389058757c, type: 3}
+  - {fileID: 8300000, guid: 1b89b51c1bddc46d0af3f7d2af4a7771, type: 3}

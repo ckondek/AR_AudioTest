@@ -13,7 +13,7 @@ public class circlePoint : MonoBehaviour
     {
        
        float x = rotationCenter.transform.position.x + Mathf.Cos(angle) * radius;
-       float y = rotationCenter.transform.position.y;
+       float y = rotationCenter.transform.position.y + Mathf.Sin(angle) * 0.3f;
        float z = rotationCenter.transform.position.z + Mathf.Sin(angle) * radius; 
        angle += speed * Time.deltaTime;
 
