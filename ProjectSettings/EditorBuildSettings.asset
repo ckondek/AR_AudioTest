@@ -50,9 +50,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/hbf.unity
     guid: 12f6189a1e540441686be48f767157e9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/crowd.unity
     guid: 5caa5586115844661a929354304358d2
+  - enabled: 1
+    path: Assets/Scenes/lissajousLines.unity
+    guid: 3ca5843e1043846e1b4089297a042067
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1aacb881599e84d2e8a90f7c529a9646, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 728de2c8d632b4bd494468a7e942aa6a, type: 2}
