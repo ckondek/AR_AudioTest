@@ -11,21 +11,25 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BasicAR_withAudioFade.unity
     guid: 44b3216abca3245ccb67644a5f11b725
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/BasicScene.unity
+    guid: e14e5d95f578346eb8ed06f002d06de1
+  - enabled: 1
     path: Assets/Scenes/BasicAR_pureTon.unity
     guid: e284eae4b0abe44fb8f410e86ac80d48
   - enabled: 0
     path: Assets/Scenes/BasicSpheres.unity
     guid: 38bb40f7d592e4429bac94fc40da3042
   - enabled: 1
-    path: Assets/Scenes/BasicScene.unity
-    guid: e14e5d95f578346eb8ed06f002d06de1
-  - enabled: 1
     path: Assets/Cube.unity
     guid: d2d20be1abc174076b0beb1f8c6afddb
+  - enabled: 0
+    path: Assets/Test.unity
+    guid: b8c4289c7e3ae45f781d069f2861331e
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1aacb881599e84d2e8a90f7c529a9646, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 728de2c8d632b4bd494468a7e942aa6a, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 1f654c449ae6f4f83be6af19f1980979, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 6d4c89e7be8724188aeb242a6a80419f, type: 2}
     com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 42cb842b672624ad38e8bea8d98bb526, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a2c667d677e1d4dbe9e312b3efa67f4c, type: 2}

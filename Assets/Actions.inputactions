@@ -1,0 +1,34 @@
+{
+    "name": "Actions",
+    "maps": [
+        {
+            "name": "Midi",
+            "id": "cd487832-98aa-40ee-996b-07a751b2d536",
+            "actions": [
+                {
+                    "name": "C5",
+                    "type": "Value",
+                    "id": "8a027f7c-69ff-43fd-82fd-5e3f4012a9e0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "54584780-aa73-435d-b11d-3cd83a2486c0",
+                    "path": "<MidiDevice>/note072",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "C5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
