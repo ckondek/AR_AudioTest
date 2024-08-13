@@ -5,7 +5,7 @@ using UnityEngine;
 public class audioTrigger : MonoBehaviour
 {
     AudioSource _AudioSource;
-    public int delay = 100;
+    
 
     void Start()
     {
