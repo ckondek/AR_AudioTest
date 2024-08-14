@@ -5,7 +5,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7f192833adf6f4a2aa4983db9b2be0c4, type: 3}
@@ -53,21 +52,6 @@ PrefabInstance:
       value: blackcube02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f192833adf6f4a2aa4983db9b2be0c4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 957549292214655499}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f192833adf6f4a2aa4983db9b2be0c4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6775796456438516152}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f192833adf6f4a2aa4983db9b2be0c4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4448566366686468923}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f192833adf6f4a2aa4983db9b2be0c4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1641669014701861293}
   m_SourcePrefab: {fileID: 100100000, guid: 7f192833adf6f4a2aa4983db9b2be0c4, type: 3}
 --- !u!1 &5140908512820881756 stripped
 GameObject:
@@ -82,57 +66,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5140908512820881756}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4, y: 30, z: 4}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &6775796456438516152
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5140908512820881756}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9ab996a2962084877919614a48965c54, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4448566366686468923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5140908512820881756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 290b0a1d1907e4deb8b9768cea819750, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cubeAAnimator: {fileID: 0}
-  animationTriggerEnter: 
-  animationTriggerExit: 
-  isEnteringSound: 0
-  framesToWait: 70
 --- !u!82 &1641669014701861293
 AudioSource:
   m_ObjectHideFlags: 0
@@ -229,3 +167,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &6775796456438516152
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5140908512820881756}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9ab996a2962084877919614a48965c54, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4448566366686468923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5140908512820881756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 290b0a1d1907e4deb8b9768cea819750, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  audioClips: []

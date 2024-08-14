@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7102291391851515538}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1111357252257182121
 MeshFilter:
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6ead16a5d97fc473c8ac70722afe9d14, type: 2}
+  - {fileID: 2100000, guid: 7f5890b3f1e314912bee35a74dd64d79, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,18 +94,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7102291391851515538}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 1
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &913853706457258417
 AudioSource:
@@ -119,7 +111,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -127,10 +119,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.5
-  MaxDistance: 1.2
+  MinDistance: 0.1
+  MaxDistance: 1
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -138,23 +130,50 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.15322292
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -11.704679
+      outSlope: -11.704679
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.24151208
+      value: 0.42086792
+      inSlope: -2.9261696
+      outSlope: -2.9261696
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.42656663
+      value: 0.0917511
+      inSlope: -0.7315424
+      outSlope: -0.7315424
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.7825766
+      value: 0
+      inSlope: -0.1828856
+      outSlope: -0.1828856
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.08550417
+      outSlope: -0.08550417
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -216,12 +235,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: 2dc7fdbe099fe4d8a81cee651072205a, type: 3}
-  - {fileID: 8300000, guid: 8ae67462f05584364a3639b5dca4adc4, type: 3}
-  - {fileID: 8300000, guid: 04145d430742e4bdb9c4106fa5458fd0, type: 3}
-  - {fileID: 8300000, guid: 986aef622d2b74f4aa6d2bd6481bfcb3, type: 3}
-  - {fileID: 8300000, guid: 77a57317941a34b92a36e0e648ac6856, type: 3}
-  - {fileID: 8300000, guid: 4fe609915c58f40f8803ca22c74a23ee, type: 3}
-  - {fileID: 8300000, guid: 0487d0cb699f24cf3949063fa4043768, type: 3}
-  - {fileID: 8300000, guid: 7a4bc6b3cc36d474a8e2e2dc955ccc4b, type: 3}
-  - {fileID: 8300000, guid: 226a108cbcd63496db084a601d8802e4, type: 3}
+  - {fileID: 8300000, guid: ead90a31a2f864155b356bbf523e018e, type: 3}
+  - {fileID: 8300000, guid: e1f8ba1a2baa747b89c861a6a1db93c2, type: 3}
+  - {fileID: 8300000, guid: a011d3dd65cdf4b439f2b7cc25c5625e, type: 3}
+  - {fileID: 8300000, guid: f215aff43a88d4f1d98e790d84054fb9, type: 3}
+  - {fileID: 8300000, guid: 8dbabf76245544992a5b07fbc3e9432b, type: 3}
+  - {fileID: 8300000, guid: ed0816ad478e64ad4bb75f56e018b280, type: 3}
+  - {fileID: 8300000, guid: 92e9846d640f04b938bd2337169fe380, type: 3}
+  - {fileID: 8300000, guid: 0ceb83fa71399427ca6e34ad899d4e87, type: 3}
+  - {fileID: 8300000, guid: feb58464a73cf4771bf5a56e0f8bf103, type: 3}

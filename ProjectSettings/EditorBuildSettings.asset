@@ -11,21 +11,42 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BasicAR_withAudioFade.unity
     guid: 44b3216abca3245ccb67644a5f11b725
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BasicScene.unity
     guid: e14e5d95f578346eb8ed06f002d06de1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BasicAR_pureTon.unity
     guid: e284eae4b0abe44fb8f410e86ac80d48
   - enabled: 0
     path: Assets/Scenes/BasicSpheres.unity
     guid: 38bb40f7d592e4429bac94fc40da3042
-  - enabled: 1
-    path: Assets/Cube.unity
+  - enabled: 0
+    path: Assets/_Scenes/Cube.unity
     guid: d2d20be1abc174076b0beb1f8c6afddb
   - enabled: 0
-    path: Assets/Test.unity
+    path: Assets/Scenes/Test.unity
     guid: b8c4289c7e3ae45f781d069f2861331e
+  - enabled: 0
+    path: Assets/Scenes/MidiController.unity
+    guid: 69cb0acf588fd4febaa92a4493ae3d73
+  - enabled: 0
+    path: Assets/Scenes/MidiBlaueWolkeUnterKamera.unity
+    guid: 70b53fd6dc701460e909ad8c4d64a7da
+  - enabled: 0
+    path: Assets/Scenes/midiblau13Elemente.unity
+    guid: 74f7fb7b89b954b23a97d46f61c96c09
+  - enabled: 0
+    path: Assets/Scenes/rainforest1.unity
+    guid: 3cf74f9d3f7414b0bb945a269f02a616
+  - enabled: 0
+    path: Assets/_Scenes/rainforest2.unity
+    guid: 5004e00f24c0d428496a4aa916c1937a
+  - enabled: 0
+    path: Assets/_Scenes/rainforest3.unity
+    guid: 72c29f1039de447f1b8f07ddd9d2404f
+  - enabled: 1
+    path: Assets/_Scenes/PhillipScenes/240813_VolumetricAudio.unity
+    guid: 951b577e0c4f94d869480edf09b818b7
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1aacb881599e84d2e8a90f7c529a9646, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 728de2c8d632b4bd494468a7e942aa6a, type: 2}
