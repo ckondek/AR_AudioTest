@@ -28,6 +28,7 @@ public class SceneLoader : MonoBehaviour
 
         // Die aktuelle Szene zur Liste der geladenen Szenen hinzufügen
         loadedScenes.Add(SceneManager.GetActiveScene().name);
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void Update()
@@ -80,9 +81,11 @@ public class SceneLoader : MonoBehaviour
             if (!loadedScenes.Contains(sceneName))
             {
                 mqttManager.PublishMessage(loadSceneTopic, sceneName);
+
                 sceneToLoad = sceneName;
                 requestLoad = true;
                 currentSceneIndex++;
+                
             }
             else
             {
@@ -102,7 +105,9 @@ public class SceneLoader : MonoBehaviour
             SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
             loadedScenes.Add(sceneName);
             Debug.Log("Loaded scene: " + sceneName);
-        }       
+            
+        }   
+          
     }
 
     private void UnloadLastScene()
@@ -135,4 +140,7 @@ public class SceneLoader : MonoBehaviour
         }
        
     }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode) 
+    {SceneManager.SetActiveScene(scene);}
 }

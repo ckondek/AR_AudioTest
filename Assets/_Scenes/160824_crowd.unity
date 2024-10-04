@@ -1136,7 +1136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1845390673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1187,7 +1187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1879639798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1245,7 +1245,7 @@ GameObject:
   - component: {fileID: 2091842097}
   - component: {fileID: 2091842091}
   m_Layer: 0
-  m_Name: MQTTManager (1)
+  m_Name: MQTTCrowd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
