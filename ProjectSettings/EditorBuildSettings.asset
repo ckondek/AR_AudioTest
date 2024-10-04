@@ -42,11 +42,50 @@ EditorBuildSettings:
     path: Assets/_Scenes/rainforest2.unity
     guid: 5004e00f24c0d428496a4aa916c1937a
   - enabled: 0
-    path: Assets/_Scenes/rainforest3.unity
+    path: Assets/_Scenes/240815_rainforest3.unity
     guid: 72c29f1039de447f1b8f07ddd9d2404f
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/PhillipScenes/240813_VolumetricAudio.unity
     guid: 951b577e0c4f94d869480edf09b818b7
+  - enabled: 0
+    path: Assets/_Scenes/test.unity
+    guid: 2ab069266e9874ac8ba9ef049944b3ad
+  - enabled: 0
+    path: Assets/_Scenes/PhillipScenes/240715_VolumetricAudioHannes.unity
+    guid: bfdf910d90dd440a88fac09ae6bebf2a
+  - enabled: 0
+    path: Assets/_Scenes/240815_Volumetric.unity
+    guid: 4f1fe36bb573c4fcc809ac813078a8d4
+  - enabled: 0
+    path: Assets/_Scenes/VolumetricAudio.unity
+    guid: 9c7d74764877c45d5b71725dd5e7d310
+  - enabled: 0
+    path: Assets/_Scenes/240815_volumetric2.unity
+    guid: db95b60de7a0445fd8fad02a13c9e25b
+  - enabled: 0
+    path: Assets/_Scenes/160824_crowd.unity
+    guid: 1a947f1c80fc44250896339dccbcf3ad
+  - enabled: 0
+    path: Assets/_Scenes/160824_crowd_nacht.unity
+    guid: cec62d561a8fb455d96ff2764ed0d76e
+  - enabled: 0
+    path: Assets/_Scenes/240823_Volumetric.unity
+    guid: 9731e67e8ad904e6ca55d4beb1c7f4dd
+  - enabled: 0
+    path: Assets/_Scenes/Midi1.unity
+    guid: 56e4b5b419721456b9f9716c9e760d50
+  - enabled: 0
+    path: Assets/Midi2.unity
+    guid: cb3a1e586b6e4485d929e5ece273f133
+  - enabled: 0
+    path: Assets/midi3.unity
+    guid: b4dbd9444e229471e9cdbf3531bd5326
+  - enabled: 1
+    path: Assets/Midi1_schleifen.unity
+    guid: e225a8d8c6dfa47c895346e93c2c02a6
+  - enabled: 0
+    path: Assets/Midi2_schleifen.unity
+    guid: 506e3529c4c4247f4a6af8f63fd7fe43
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1aacb881599e84d2e8a90f7c529a9646, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 728de2c8d632b4bd494468a7e942aa6a, type: 2}

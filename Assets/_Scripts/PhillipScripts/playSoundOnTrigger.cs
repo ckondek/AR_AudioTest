@@ -10,9 +10,9 @@ public class PlaySoundOnTrigger : MonoBehaviour
     void Start()
     {
         // Add an AudioSource component if it doesn't already exist
-        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource = this.GetComponent<AudioSource>();
         audioSource.clip = soundClip;
-        audioSource.loop = true; // Set to true if you want the sound to loop
+        audioSource.loop = false; // Set to true if you want the sound to loop
     }
 
     void OnTriggerEnter(Collider other)

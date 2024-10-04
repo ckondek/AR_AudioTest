@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: fabian.raith
-  productName: zonen
+  productName: Midi
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -155,7 +155,6 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 11400000, guid: 1f654c449ae6f4f83be6af19f1980979, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -178,7 +177,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.fabian.raith.test
     Standalone: com.doublelucky.3spheres
-    iPhone: com.doublelucky.Rainforest
+    iPhone: com.fabianraith.Midi
   buildNumber:
     Standalone: 0
     VisionOS: 0

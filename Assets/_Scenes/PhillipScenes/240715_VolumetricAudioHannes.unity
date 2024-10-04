@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028353, g: 0.22571383, b: 0.30692253, a: 1}
+  m_IndirectSpecularColor: {r: 0.18018535, g: 0.22559482, b: 0.30677685, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -150,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 70869520}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.82, y: 0, z: -1.08}
+  m_LocalPosition: {x: 0.5533334, y: 0, z: -1.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -451,7 +451,7 @@ Transform:
   m_GameObject: {fileID: 112555528}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.58, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -657,11 +657,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OuterPointSet: 1
-  OuterPoint: {x: 0.09424995, y: -0.375, z: -0.20625016}
-  OuterPointDistance: 0.4382319
+  OuterPoint: {x: -1.1724167, y: -0.375, z: -0.20625016}
+  OuterPointDistance: 0.48232076
   isHollow: 0
   InnerPointSet: 1
-  InnerPoint: {x: 0, y: 0, z: 0}
+  InnerPoint: {x: -0.95, y: 0, z: 0}
   InnerPointDistance: 0
   InnerPointInside: 1
   boxCollider: {fileID: 141756488}
@@ -786,7 +786,7 @@ Transform:
   m_GameObject: {fileID: 212828991}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.12, y: 0, z: -2.358}
+  m_LocalPosition: {x: -2.1699998, y: 0, z: -2.358}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1003,7 +1003,7 @@ Transform:
   m_GameObject: {fileID: 303233317}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.0249999, y: 0, z: -1.4000001}
+  m_LocalPosition: {x: 1.0133333, y: 0, z: -1.4000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1426,12 +1426,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OuterPointSet: 1
-  OuterPoint: {x: 0.005663344, y: 0, z: -0.18223622}
-  OuterPointDistance: 0.1823242
+  OuterPoint: {x: -0.94342005, y: 0, z: -0.21173075}
+  OuterPointDistance: 0.21183297
   isHollow: 0
   InnerPointSet: 1
-  InnerPoint: {x: 0.005663344, y: 0, z: -0.18223622}
-  InnerPointDistance: 0.1823242
+  InnerPoint: {x: -0.94342005, y: 0, z: -0.21173075}
+  InnerPointDistance: 0.21183297
   InnerPointInside: 0
   boxCollider: {fileID: 350970070}
   center: {x: 0, y: 0, z: 0}
@@ -1557,8 +1557,6 @@ Transform:
   - {fileID: 417541044}
   - {fileID: 942916366}
   - {fileID: 644943750}
-  - {fileID: 1326419214}
-  - {fileID: 1750944835}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &417541043
@@ -1628,12 +1626,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OuterPointSet: 1
-  OuterPoint: {x: 0.01987413, y: 0, z: -0.63951564}
-  OuterPointDistance: 0.6398244
+  OuterPoint: {x: -0.9292093, y: 0, z: -0.66901016}
+  OuterPointDistance: 0.66933316
   isHollow: 0
   InnerPointSet: 1
-  InnerPoint: {x: 0.01987413, y: 0, z: -0.63951564}
-  InnerPointDistance: 0.6398244
+  InnerPoint: {x: -0.9292093, y: 0, z: -0.66901016}
+  InnerPointDistance: 0.66933316
   InnerPointInside: 0
   boxCollider: {fileID: 428529680}
   center: {x: 0, y: 0, z: 0}
@@ -1972,7 +1970,7 @@ Transform:
   m_GameObject: {fileID: 599787422}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.95, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1985,7 +1983,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599787422}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b15f82cc229284894964d2d30806969d, type: 3}
   m_Name: 
@@ -2216,7 +2214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FocusMode: -1
   m_LightEstimationMode: -1
-  m_AutoFocus: 1
+  m_AutoFocus: 0
   m_LightEstimation: 0
   m_FacingDirection: 1
   m_RenderMode: 0
@@ -2373,11 +2371,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OuterPointSet: 1
-  OuterPoint: {x: -0.000000026048191, y: 0, z: 0.00000003028731}
-  OuterPointDistance: 0.000000039947835
+  OuterPoint: {x: -0.95000005, y: 0, z: 0.000000021048532}
+  OuterPointDistance: 0.00000006321198
   isHollow: 0
   InnerPointSet: 1
-  InnerPoint: {x: 0, y: 0, z: 0}
+  InnerPoint: {x: -0.95, y: 0, z: 0}
   InnerPointDistance: 0
   InnerPointInside: 1
   boxCollider: {fileID: 626908765}
@@ -2612,12 +2610,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OuterPointSet: 1
-  OuterPoint: {x: 0.000000029934768, y: 0, z: 1.1850001}
-  OuterPointDistance: 1.1850001
+  OuterPoint: {x: -0.0825001, y: 0, z: 1.1850001}
+  OuterPointDistance: 1.4685984
   isHollow: 0
   InnerPointSet: 1
-  InnerPoint: {x: 0.000000029934768, y: 0, z: 1.1850001}
-  InnerPointDistance: 1.1850001
+  InnerPoint: {x: -0.0825001, y: 0, z: 1.1850001}
+  InnerPointDistance: 1.4685984
   InnerPointInside: 0
   boxCollider: {fileID: 869519839}
   center: {x: 0, y: 0, z: 0}
@@ -2985,11 +2983,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OuterPointSet: 1
-  OuterPoint: {x: -0.000000023595646, y: 0, z: -0.0000000066812618}
-  OuterPointDistance: 0.000000024523331
+  OuterPoint: {x: -0.95, y: 0, z: -0.0000000066812618}
+  OuterPointDistance: 0.0000000066812618
   isHollow: 0
   InnerPointSet: 1
-  InnerPoint: {x: 0, y: 0, z: 0}
+  InnerPoint: {x: -0.95, y: 0, z: 0}
   InnerPointDistance: 0
   InnerPointInside: 1
   boxCollider: {fileID: 1199979491}
@@ -3141,13 +3139,13 @@ Transform:
   m_GameObject: {fileID: 1326419213}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.895023, y: -3.7897959, z: -3.4840565}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 667303783}
   - {fileID: 161525072}
-  m_Father: {fileID: 359591717}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1347041385
 GameObject:
@@ -3219,6 +3217,143 @@ MonoBehaviour:
   - A: {x: -0.5, y: -0.5, z: -0.5}
     B: {x: -0.5, y: -0.5, z: 0.5}
   material: {fileID: 2100000, guid: cfec17b2cf7410448af90060a9b26580, type: 2}
+--- !u!1 &1351998751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1351998755}
+  - component: {fileID: 1351998754}
+  - component: {fileID: 1351998753}
+  - component: {fileID: 1351998752}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1351998752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351998751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+--- !u!81 &1351998753
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351998751}
+  m_Enabled: 1
+--- !u!20 &1351998754
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351998751}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1351998755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351998751}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5485215, y: 0.92, z: -3.3494022}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1366122955
 GameObject:
   m_ObjectHideFlags: 0
@@ -4218,7 +4353,7 @@ Transform:
   m_GameObject: {fileID: 1632836261}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.64499974, y: -0.5, z: -1.0843337}
+  m_LocalPosition: {x: -0.6449996, y: -0.5, z: -2.773223}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4511,12 +4646,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OuterPointSet: 1
-  OuterPoint: {x: -0.19125009, y: 0, z: 2.4299998}
-  OuterPointDistance: 2.4375143
+  OuterPoint: {x: -0.95, y: 0, z: 2.4299998}
+  OuterPointDistance: 2.4299998
   isHollow: 0
   InnerPointSet: 1
-  InnerPoint: {x: -0.19125009, y: 0, z: 2.4299998}
-  InnerPointDistance: 2.4375143
+  InnerPoint: {x: -0.95, y: 0, z: 2.4299998}
+  InnerPointDistance: 2.4299998
   InnerPointInside: 0
   boxCollider: {fileID: 1697473929}
   center: {x: 0, y: 0, z: 0}
@@ -4810,7 +4945,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 04006c5a9571d48cbae17ca433de54d5, type: 2}
+  - {fileID: 2100000, guid: 68965bf38e29347c79628a2080876316, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4848,13 +4983,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750944831}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1.6}
+  m_LocalRotation: {x: 0.7058716, y: -0, z: -0, w: -0.70833987}
+  m_LocalPosition: {x: 0, y: 0, z: 3.7}
+  m_LocalScale: {x: 0.75, y: 0.75000024, z: 1.2000003}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 359591717}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 270.2, y: 0, z: 0}
 --- !u!1 &1755943620
 GameObject:
   m_ObjectHideFlags: 0
@@ -5028,7 +5163,7 @@ MonoBehaviour:
   m_OriginBaseGameObject: {fileID: 1807517217}
   m_CameraFloorOffsetObject: {fileID: 561941306}
   m_RequestedTrackingOriginMode: 0
-  m_CameraYOffset: 1.1176
+  m_CameraYOffset: 1.23
 --- !u!4 &1807517219
 Transform:
   m_ObjectHideFlags: 0
@@ -5674,7 +5809,7 @@ Transform:
   m_GameObject: {fileID: 1958285264}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.12238371, y: 0, z: -3.0849998}
+  m_LocalPosition: {x: 1.1436716, y: 0, z: -3.0849993}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6053,12 +6188,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OuterPointSet: 1
-  OuterPoint: {x: -0.000000018464476, y: 0, z: 1.4715}
-  OuterPointDistance: 1.4715
+  OuterPoint: {x: -0.037499905, y: 0, z: 1.4715}
+  OuterPointDistance: 1.7314644
   isHollow: 0
   InnerPointSet: 1
-  InnerPoint: {x: -0.000000018464476, y: 0, z: 1.4715}
-  InnerPointDistance: 1.4715
+  InnerPoint: {x: -0.037499905, y: 0, z: 1.4715}
+  InnerPointDistance: 1.7314644
   InnerPointInside: 0
   boxCollider: {fileID: 1993786470}
   center: {x: 0, y: 0, z: 0}
@@ -6158,6 +6293,9 @@ SceneRoots:
   - {fileID: 1807517219}
   - {fileID: 1969623965}
   - {fileID: 1706383050}
+  - {fileID: 1326419214}
+  - {fileID: 1750944835}
   - {fileID: 359591717}
   - {fileID: 1983313753}
   - {fileID: 1038906410}
+  - {fileID: 1351998755}
