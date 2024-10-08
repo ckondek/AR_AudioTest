@@ -262,13 +262,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objects:
   - {fileID: 1182154877848758820, guid: bcf19f34ed8784fc49341594749b3148, type: 3}
-  amount: 15
-  xStart: -1.5
-  xEnd: 1.5
-  yStart: 0.5
-  yEnd: 0.5
+  amount: 35
+  xStart: -5
+  xEnd: 5
+  yStart: -0.5
+  yEnd: -0.5
   zStart: -1
-  zEnd: 4
+  zEnd: 25
 --- !u!114 &610672836
 MonoBehaviour:
   m_ObjectHideFlags: 0

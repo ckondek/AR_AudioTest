@@ -31,6 +31,7 @@ public class MinisMidiInput : MonoBehaviour
             hasExecuted = false; 
             }; 
         };
+        MQTTManager = GameObject.FindGameObjectWithTag("MQTT").GetComponentInChildren<MQTTManager>();
     }
 
     void Update ()

@@ -295,22 +295,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19ed2c29612147ca8a6cf0cd47f24df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brokerAddress: test.mosquitto.org
+  brokerAddress: 192.168.0.101
   topics:
-  - derfabs/unity/midi1/activate
-  - derfabs/unity/midi2/activate
-  - derfabs/unity/midi3/activate
-  - derfabs/unity/midi4/activate
-  - derfabs/unity/midi5/activate
-  - derfabs/unity/midi6/activate
-  - derfabs/unity/midi7/activate
-  - derfabs/unity/midi8/activate
-  - derfabs/unity/midi9/activate
-  - derfabs/unity/midi10/activate
-  - derfabs/unity/midi11/activate
-  - derfabs/unity/midi12/activate
-  - derfabs/unity/midi13/activate
-  - derfabs/unity/midi14/activate
+  - unity/midi1/activate
+  - unity/midi2/activate
+  - unity/midi3/activate
+  - unity/midi4/activate
+  - unity/midi5/activate
+  - unity/midi6/activate
+  - unity/midi7/activate
+  - unity/midi8/activate
+  - unity/midi9/activate
+  - unity/midi10/activate
+  - unity/midi11/activate
+  - unity/midi12/activate
+  - unity/midi13/activate
+  - unity/midi14/activate
   UnityMainThreadDispatcher: {fileID: 199438384}
 --- !u!4 &199438383
 Transform:
@@ -1395,7 +1395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteList: 25000000
   MQTTManager: {fileID: 199438382}
-  topic: derfabs/unity/midi6/activate
+  topic: unity/midi6/activate
 --- !u!114 &765328899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1410,7 +1410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteList: 27000000
   MQTTManager: {fileID: 199438382}
-  topic: derfabs/unity/midi7/activate
+  topic: unity/midi7/activate
 --- !u!114 &765328900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1425,7 +1425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteList: 29000000
   MQTTManager: {fileID: 199438382}
-  topic: derfabs/unity/midi8/activate
+  topic: unity/midi8/activate
 --- !u!114 &765328901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1440,7 +1440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteList: 2b000000
   MQTTManager: {fileID: 199438382}
-  topic: derfabs/unity/midi9/activate
+  topic: unity/midi9/activate
 --- !u!114 &765328902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1455,7 +1455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteList: 24000000
   MQTTManager: {fileID: 199438382}
-  topic: derfabs/unity/midi1/activate
+  topic: unity/midi1/activate
 --- !u!114 &765328903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1470,7 +1470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteList: 2d000000
   MQTTManager: {fileID: 199438382}
-  topic: derfabs/unity/midi10/activate
+  topic: unity/midi10/activate
 --- !u!114 &765328904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,7 +1485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteList: 26000000
   MQTTManager: {fileID: 199438382}
-  topic: derfabs/unity/midi2/activate
+  topic: unity/midi2/activate
 --- !u!114 &765328905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1500,7 +1500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteList: 2a000000
   MQTTManager: {fileID: 199438382}
-  topic: derfabs/unity/midi4/activate
+  topic: unity/midi4/activate
 --- !u!114 &765328906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1515,7 +1515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteList: 28000000
   MQTTManager: {fileID: 199438382}
-  topic: derfabs/unity/midi3/activate
+  topic: unity/midi3/activate
 --- !u!114 &765328907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1530,7 +1530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteList: 2f000000
   MQTTManager: {fileID: 199438382}
-  topic: derfabs/unity/midi2/activate
+  topic: unity/midi2/activate
 --- !u!1 &809620231
 GameObject:
   m_ObjectHideFlags: 0

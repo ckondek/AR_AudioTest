@@ -10,6 +10,7 @@ public class audioPicker : MonoBehaviour
     {
         AudioSource source = this.GetComponent<AudioSource>();
         source.clip = clips[(int)Random.Range(0,clips.Length)];
+        
         source.Play();
        
     }

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
-public class SceneLoader : MonoBehaviour
+public class SceneHandler : MonoBehaviour
 {
     public MQTTManager mqttManager;
     public string loadSceneTopic = "unity/scene/load";
@@ -15,6 +15,7 @@ public class SceneLoader : MonoBehaviour
     private string sceneToUnload; // Name der Szene, die entladen werden soll
     private bool requestLoad = false;
     private bool requestUnload = false;
+    private bool requestLoadNumber = false;
 
     void Start()
     {
@@ -57,7 +58,19 @@ public class SceneLoader : MonoBehaviour
         {
             UnloadLastScene();
         }
+
+        for (int i = 1; i <= 9; i++)
+        {
+            if (Input.GetKeyDown(i.ToString()))
+            {
+                LoadSceneByNumber(i);
+                requestLoadNumber = false;
+            }
+        }
+
+        
     }
+
 
     private void OnMqttMessageReceived(string topic, string message)
     {
@@ -140,7 +153,40 @@ public class SceneLoader : MonoBehaviour
         }
        
     }
+   private void LoadSceneByNumber(int sceneIndex)
+{
+    // Überprüfen, ob der Szenenindex gültig ist
+    if (sceneIndex < SceneManager.sceneCountInBuildSettings)
+    {
+        // Abrufen des Szenennamens aus den Build-Einstellungen
+        string scenePath = SceneUtility.GetScenePathByBuildIndex(sceneIndex);
+        string sceneName = System.IO.Path.GetFileNameWithoutExtension(scenePath);
+
+        if (!string.IsNullOrEmpty(sceneName))
+        {
+            // MQTT-Befehl senden, um die Szene zu laden
+            mqttManager.PublishMessage(loadSceneTopic, sceneName);
+
+            // Vorherige Szene entladen (außer 'Basic')
+            UnloadLastScene();
+
+            // Neue Szene laden
+            SceneManager.LoadScene(sceneIndex, LoadSceneMode.Additive);
+            loadedScenes.Add(sceneName);
+            Debug.Log("Loaded scene: " + sceneName);
+        }
+        else
+        {
+            Debug.LogError("Der Szenenname für den Index " + sceneIndex + " ist ungültig oder leer.");
+        }
+    }
+    else
+    {
+        Debug.LogError("Die Szene mit Index " + sceneIndex + " existiert nicht im Build.");
+    }
+}
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) 
     {SceneManager.SetActiveScene(scene);}
+
 }
