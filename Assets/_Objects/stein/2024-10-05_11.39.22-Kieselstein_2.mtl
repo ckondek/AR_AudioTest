@@ -1,0 +1,12 @@
+#  
+#  Wavefront MTL
+#  
+#  
+
+newmtl g0
+map_Kd 2024-10-05_11.39.22-Kieselstein_2_tex0.jpg
+norm 2024-10-05_11.39.22-Kieselstein_2_norm0.jpg
+disp 2024-10-05_11.39.22-Kieselstein_2_disp0.jpg
+map_ao 2024-10-05_11.39.22-Kieselstein_2_ao0.jpg
+map_Pr 2024-10-05_11.39.22-Kieselstein_2_roughness0.jpg
+#  
