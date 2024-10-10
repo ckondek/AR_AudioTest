@@ -14,7 +14,7 @@ public class MinisMidiInput : MonoBehaviour
     // Liste von Noten, die für den Vergleich verwendet werden
     public List <int> noteList = new List<int> { 60, 62, 64 }; // Beispielnoten: Mittel-C, D, E
     public MQTTManager MQTTManager;
-    public string topic = "derfabs/unity/midi1/activate"; // Dein MQTT-Topic
+    public string topic = null ; // Dein MQTT-Topic
 
 
     void Start()
@@ -33,7 +33,7 @@ MQTTManager = GameObject.FindGameObjectWithTag("MQTT").GetComponentInChildren<MQ
             hasExecuted = false; 
             }; 
         };
-        MQTTManager = GameObject.FindGameObjectWithTag("MQTT").GetComponentInChildren<MQTTManager>();
+     
     }
 
     void Update ()

@@ -47,10 +47,7 @@ public class MQTTManager : MonoBehaviour
         string topic = e.Topic;
         string message = Encoding.UTF8.GetString(e.Message);
         // Benachrichtige den Dispatcher, um die Nachricht im Hauptthread zu verarbeiten
-    UnityMainThreadDispatcher.Enqueue(() => 
-    {
-        OnMqttMessageReceived?.Invoke(topic, message);
-    });
+
         Debug.Log("Received message: " + message + " on topic: " + topic);
 
         OnMqttMessageReceived?.Invoke(topic, message);

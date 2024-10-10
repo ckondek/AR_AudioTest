@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class SceneHandler : MonoBehaviour
 {
     public MQTTManager mqttManager;
+   
     public string loadSceneTopic = "unity/scene/load";
     public string unloadSceneTopic = "unity/scene/unload";
     public List<string> scenesToLoad = new List<string>(); // Liste der verfügbaren Szenen zum Laden
@@ -86,30 +87,37 @@ public class SceneHandler : MonoBehaviour
         }
     }
 
-    private void LoadNextScene()
+private void LoadNextScene()
+{
+    if (currentSceneIndex < scenesToLoad.Count)
     {
-        if (currentSceneIndex < scenesToLoad.Count)
+        string sceneName = scenesToLoad[currentSceneIndex];
+        if (!loadedScenes.Contains(sceneName))
         {
-            string sceneName = scenesToLoad[currentSceneIndex];
-            if (!loadedScenes.Contains(sceneName))
-            {
-                mqttManager.PublishMessage(loadSceneTopic, sceneName);
+            // MQTT-Nachricht senden
+            mqttManager.PublishMessage(loadSceneTopic, sceneName);
 
-                sceneToLoad = sceneName;
-                requestLoad = true;
-                currentSceneIndex++;
-                
-            }
-            else
+            // Vorherige Szene entladen, außer wenn die nächste Szene die gleiche wie die aktuelle ist
+            if (sceneName != SceneManager.GetActiveScene().name)
             {
-                Debug.Log("Scene " + sceneName + " is already loaded.");
+                UnloadLastScene();
             }
+
+            // Neue Szene laden
+            sceneToLoad = sceneName;
+            requestLoad = true;
+            currentSceneIndex++;
         }
         else
         {
-            Debug.Log("No more scenes to load.");
+            Debug.Log("Scene " + sceneName + " is already loaded.");
         }
     }
+    else
+    {
+        Debug.Log("No more scenes to load.");
+    }
+}
 
     private void LoadScene(string sceneName)
     {
@@ -153,32 +161,37 @@ public class SceneHandler : MonoBehaviour
         }
        
     }
-   private void LoadSceneByNumber(int sceneIndex)
+ private void LoadSceneByNumber(int sceneIndex)
 {
-    // Überprüfen, ob der Szenenindex gültig ist
     if (sceneIndex < SceneManager.sceneCountInBuildSettings)
     {
-        // Abrufen des Szenennamens aus den Build-Einstellungen
         string scenePath = SceneUtility.GetScenePathByBuildIndex(sceneIndex);
         string sceneName = System.IO.Path.GetFileNameWithoutExtension(scenePath);
 
-        if (!string.IsNullOrEmpty(sceneName))
-        {
-            // MQTT-Befehl senden, um die Szene zu laden
-            mqttManager.PublishMessage(loadSceneTopic, sceneName);
+        // Debugging: Ausgabe des vollständigen Szenenpfads
+        Debug.Log("Szenenpfad für Index " + sceneIndex + ": " + scenePath);
+        Debug.Log("Extrahierter Szenenname: " + sceneName);
 
-            // Vorherige Szene entladen (außer 'Basic')
+        // Überprüfen, ob die Szene bereits geladen ist
+        if (loadedScenes.Contains(sceneName))
+        {
+            Debug.Log("Die Szene " + sceneName + " ist bereits geladen.");
+            return; // Die Szene ist bereits geladen, nichts tun
+        }
+
+        // MQTT-Nachricht senden, um die Szene zu laden
+        mqttManager.PublishMessage(loadSceneTopic, sceneName);
+
+        // Vorherige Szene entladen, außer wenn die neue Szene die gleiche wie die aktuelle ist
+        if (sceneName != SceneManager.GetActiveScene().name)
+        {
             UnloadLastScene();
+        }
 
-            // Neue Szene laden
-            SceneManager.LoadScene(sceneIndex, LoadSceneMode.Additive);
-            loadedScenes.Add(sceneName);
-            Debug.Log("Loaded scene: " + sceneName);
-        }
-        else
-        {
-            Debug.LogError("Der Szenenname für den Index " + sceneIndex + " ist ungültig oder leer.");
-        }
+        // Neue Szene laden
+        SceneManager.LoadScene(sceneIndex, LoadSceneMode.Additive);
+        loadedScenes.Add(sceneName);
+        Debug.Log("Loaded scene: " + sceneName);
     }
     else
     {

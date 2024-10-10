@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/241004_BasicScene.unity
-    guid: e14e5d95f578346eb8ed06f002d06de1
+    path: Assets/241010_BasicScene.unity
+    guid: b80e140fa3c034ffba1ba0d0affef50a
   - enabled: 1
     path: Assets/_Scenes/241009_crowd_nacht.unity
     guid: cec62d561a8fb455d96ff2764ed0d76e
@@ -24,14 +24,11 @@ EditorBuildSettings:
     path: Assets/Scenes/241007_Sinus.unity
     guid: 8263048faa63e443b832d1f92214b039
   - enabled: 1
-    path: Assets/_Scenes/241008_Papier.unity
-    guid: 1e9640f2842ca48658f51dd1d4c06795
+    path: Assets/_Scenes/241008_PapierAufbauend.unity
+    guid: 04c2f2a0806674ef488fde4033d8df57
   - enabled: 1
     path: Assets/_Scenes/241008_Zones.unity
     guid: 9ff39687b344c4306bd77b700b3a8f38
-  - enabled: 1
-    path: Assets/_Scenes/241008_PapierAufbauend.unity
-    guid: 04c2f2a0806674ef488fde4033d8df57
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1aacb881599e84d2e8a90f7c529a9646, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 728de2c8d632b4bd494468a7e942aa6a, type: 2}
