@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/241004_BasicScene.unity
     guid: e14e5d95f578346eb8ed06f002d06de1
   - enabled: 1
-    path: Assets/_Scenes/241608_crowd_nacht.unity
+    path: Assets/_Scenes/241009_crowd_nacht.unity
     guid: cec62d561a8fb455d96ff2764ed0d76e
   - enabled: 1
     path: Assets/_Scenes/240815_rainforest3.unity

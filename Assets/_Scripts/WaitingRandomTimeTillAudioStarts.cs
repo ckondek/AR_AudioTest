@@ -21,7 +21,7 @@ public class RandomAudioPlayer : MonoBehaviour
        
       
         // Generiere eine zufällige Zeitspanne zwischen 1 und 15 Sekunden
-        randomTimeInterval = Random.Range(1f, 60f);
+        randomTimeInterval = Random.Range(1f, 240f);
         
   
     }

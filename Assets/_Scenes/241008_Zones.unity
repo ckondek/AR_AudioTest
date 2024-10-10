@@ -472,6 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundClip: {fileID: 8300000, guid: cf5a15b98415543dfa6f011e46e7c2b1, type: 3}
+  audioSource: {fileID: 0}
 --- !u!23 &54624926
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -635,7 +636,7 @@ Transform:
   m_GameObject: {fileID: 70869520}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.275, y: 0, z: -1.725}
+  m_LocalPosition: {x: -0.39166674, y: 1.8152533, z: -1.5416667}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -785,7 +786,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 7.527304e-12
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -825,88 +826,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1001 &112294529
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 936356069}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.033
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9.66
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_Name
-      value: 6.6.2024_Houseclub
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dee4339580b544c3696da6314a07849f, type: 3}
---- !u!4 &112294530 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-  m_PrefabInstance: {fileID: 112294529}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &112555528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,14 +1277,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a946634e8f9caec40b88b4623b30887a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OuterPointSet: 0
-  OuterPoint: {x: 0.014900001, y: -0.375, z: -0.119000085}
-  OuterPointDistance: 0.39371058
+  OuterPointSet: 1
+  OuterPoint: {x: -1.1637005, y: 1.36144, z: 0.109999925}
+  OuterPointDistance: 0.43629956
   isHollow: 0
-  InnerPointSet: 0
-  InnerPoint: {x: 0, y: 0, z: 0}
-  InnerPointDistance: 0
-  InnerPointInside: 1
+  InnerPointSet: 1
+  InnerPoint: {x: -1.1637005, y: 1.36144, z: 0.109999925}
+  InnerPointDistance: 0.43629956
+  InnerPointInside: 0
   boxCollider: {fileID: 141756488}
   center: {x: 0, y: 0, z: 0}
   size: {x: 1, y: 1, z: 1}
@@ -1456,11 +1375,6 @@ Transform:
   - {fileID: 1366122956}
   m_Father: {fileID: 942916366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &161525072 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-  m_PrefabInstance: {fileID: 503593207}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &185846027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,7 +1602,7 @@ Transform:
   m_GameObject: {fileID: 212828991}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.6499996, y: 0, z: -2.873}
+  m_LocalPosition: {x: -2.7399998, y: 1.8152533, z: -2.873}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1793,7 +1707,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 51d4744285a564b569623ebb6f90ba55, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -1905,7 +1819,7 @@ Transform:
   m_GameObject: {fileID: 303233317}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.485, y: 0.19000006, z: -1.8099997}
+  m_LocalPosition: {x: 0.18333316, y: 1.8152533, z: -1.8099997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2467,13 +2381,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a946634e8f9caec40b88b4623b30887a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OuterPointSet: 0
-  OuterPoint: {x: -0.000000014250588, y: -0.000000059604645, z: -0.52199984}
-  OuterPointDistance: 0.52199984
+  OuterPointSet: 1
+  OuterPoint: {x: -1.4010001, y: 1.36144, z: -0.52199984}
+  OuterPointDistance: 0.66258943
   isHollow: 0
-  InnerPointSet: 0
-  InnerPoint: {x: -0.000000014250588, y: -0.000000059604645, z: -0.52199984}
-  InnerPointDistance: 0.52199984
+  InnerPointSet: 1
+  InnerPoint: {x: -1.4010001, y: 1.36144, z: -0.52199984}
+  InnerPointDistance: 0.66258943
   InnerPointInside: 0
   boxCollider: {fileID: 350970070}
   center: {x: 0, y: 0, z: 0}
@@ -2886,13 +2800,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a946634e8f9caec40b88b4623b30887a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OuterPointSet: 0
-  OuterPoint: {x: -0.0000000069102093, y: -0.000000041896826, z: -0.69599986}
-  OuterPointDistance: 0.69599986
+  OuterPointSet: 1
+  OuterPoint: {x: -1.6000001, y: 1.36144, z: -0.69599986}
+  OuterPointDistance: 0.8059999
   isHollow: 0
-  InnerPointSet: 0
-  InnerPoint: {x: -0.0000000069102093, y: -0.000000041896826, z: -0.69599986}
-  InnerPointDistance: 0.69599986
+  InnerPointSet: 1
+  InnerPoint: {x: -1.6000001, y: 1.36144, z: -0.69599986}
+  InnerPointDistance: 0.8059999
   InnerPointInside: 0
   boxCollider: {fileID: 428529680}
   center: {x: 0, y: 0, z: 0}
@@ -3244,83 +3158,6 @@ Transform:
   - {fileID: 22308206}
   m_Father: {fileID: 1894642599}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &503593207
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1326419214}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.033
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9.66
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_Name
-      value: 6.6.2024_Houseclub
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: dee4339580b544c3696da6314a07849f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dee4339580b544c3696da6314a07849f, type: 3}
 --- !u!1 &523041170
 GameObject:
   m_ObjectHideFlags: 0
@@ -3589,14 +3426,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a946634e8f9caec40b88b4623b30887a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OuterPointSet: 0
-  OuterPoint: {x: -0.094780125, y: -0.10500002, z: 0.059920058}
-  OuterPointDistance: 0.15361865
+  OuterPointSet: 1
+  OuterPoint: {x: -1.2435006, y: 1.36144, z: 0.10999996}
+  OuterPointDistance: 0.35649943
   isHollow: 0
-  InnerPointSet: 0
-  InnerPoint: {x: 0, y: 0, z: 0}
-  InnerPointDistance: 0
-  InnerPointInside: 1
+  InnerPointSet: 1
+  InnerPoint: {x: -1.2435006, y: 1.36144, z: 0.10999996}
+  InnerPointDistance: 0.35649943
+  InnerPointInside: 0
   boxCollider: {fileID: 626908765}
   center: {x: 0, y: 0, z: 0}
   size: {x: 1, y: 1, z: 1}
@@ -4038,7 +3875,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &724693775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4534,6 +4371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundClip: {fileID: 8300000, guid: cf5a15b98415543dfa6f011e46e7c2b1, type: 3}
+  audioSource: {fileID: 0}
 --- !u!23 &854650116
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4835,6 +4673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundClip: {fileID: 8300000, guid: d6fbe1a5194d44a369264294ec34895a, type: 3}
+  audioSource: {fileID: 0}
 --- !u!23 &857997610
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4933,13 +4772,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a946634e8f9caec40b88b4623b30887a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OuterPointSet: 0
-  OuterPoint: {x: 0.0000000066951245, y: 0, z: 0.61200005}
-  OuterPointDistance: 0.61200005
+  OuterPointSet: 1
+  OuterPoint: {x: -1.4130001, y: 1.36144, z: 0.61200005}
+  OuterPointDistance: 0.5356986
   isHollow: 0
-  InnerPointSet: 0
-  InnerPoint: {x: 0.0000000066951245, y: 0, z: 0.61200005}
-  InnerPointDistance: 0.61200005
+  InnerPointSet: 1
+  InnerPoint: {x: -1.4130001, y: 1.36144, z: 0.61200005}
+  InnerPointDistance: 0.5356986
   InnerPointInside: 0
   boxCollider: {fileID: 869519839}
   center: {x: 0, y: 0, z: 0}
@@ -5131,7 +4970,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1914671900}
-  - {fileID: 112294530}
   m_Father: {fileID: 1983313753}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &942916365
@@ -6187,12 +6025,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a946634e8f9caec40b88b4623b30887a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OuterPointSet: 0
-  OuterPoint: {x: 0.46823153, y: -0.35737306, z: -0.4244716}
-  OuterPointDistance: 0.7260388
+  OuterPointSet: 1
+  OuterPoint: {x: -2.0786169, y: 1.8321222, z: -0.46328813}
+  OuterPointDistance: 0.88276565
   isHollow: 0
-  InnerPointSet: 0
-  InnerPoint: {x: 0, y: 0, z: 0}
+  InnerPointSet: 1
+  InnerPoint: {x: -1.6, y: 1.36144, z: 0.11}
   InnerPointDistance: 0
   InnerPointInside: 1
   boxCollider: {fileID: 1199979491}
@@ -6547,7 +6385,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 667303783}
-  - {fileID: 161525072}
   m_Father: {fileID: 359591717}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1347041385
@@ -7202,6 +7039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundClip: {fileID: 8300000, guid: cf5a15b98415543dfa6f011e46e7c2b1, type: 3}
+  audioSource: {fileID: 0}
 --- !u!23 &1396618184
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7553,7 +7391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1521400146
 Transform:
   m_ObjectHideFlags: 0
@@ -7967,6 +7805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundClip: {fileID: 8300000, guid: d6fbe1a5194d44a369264294ec34895a, type: 3}
+  audioSource: {fileID: 0}
 --- !u!23 &1544688924
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8338,6 +8177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundClip: {fileID: 8300000, guid: cf5a15b98415543dfa6f011e46e7c2b1, type: 3}
+  audioSource: {fileID: 0}
 --- !u!23 &1555840580
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9376,7 +9216,7 @@ Transform:
   m_GameObject: {fileID: 1632836261}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.95166653, y: -0.5, z: -1.487667}
+  m_LocalPosition: {x: -1.3333331, y: 1.8152533, z: -3.585002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9669,13 +9509,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a946634e8f9caec40b88b4623b30887a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OuterPointSet: 0
-  OuterPoint: {x: -0.21899998, y: 0.14250004, z: 2.394}
-  OuterPointDistance: 2.4082158
+  OuterPointSet: 1
+  OuterPoint: {x: -1.6, y: 1.36144, z: 2.394}
+  OuterPointDistance: 2.2840002
   isHollow: 0
-  InnerPointSet: 0
-  InnerPoint: {x: -0.21899998, y: 0.14250004, z: 2.394}
-  InnerPointDistance: 2.4082158
+  InnerPointSet: 1
+  InnerPoint: {x: -1.6, y: 1.36144, z: 2.394}
+  InnerPointDistance: 2.2840002
   InnerPointInside: 0
   boxCollider: {fileID: 1697473929}
   center: {x: 0, y: 0, z: 0}
@@ -10686,6 +10526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundClip: {fileID: 8300000, guid: cf5a15b98415543dfa6f011e46e7c2b1, type: 3}
+  audioSource: {fileID: 0}
 --- !u!23 &1847092135
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11225,7 +11066,7 @@ Transform:
   m_GameObject: {fileID: 1958285264}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000000011517017, y: -0.000000055862436, z: -3.765}
+  m_LocalPosition: {x: 2.666667, y: 1.8152533, z: -3.765}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11585,6 +11426,7 @@ GameObject:
   - component: {fileID: 1993786470}
   - component: {fileID: 1993786469}
   - component: {fileID: 1993786475}
+  - component: {fileID: 1993786476}
   m_Layer: 0
   m_Name: Outer
   m_TagString: Untagged
@@ -11604,13 +11446,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a946634e8f9caec40b88b4623b30887a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OuterPointSet: 0
-  OuterPoint: {x: 0.000000104517056, y: 0, z: 1.5162001}
-  OuterPointDistance: 1.5162001
+  OuterPointSet: 1
+  OuterPoint: {x: -0.05400002, y: 1.36144, z: 1.5162001}
+  OuterPointDistance: 2.08986
   isHollow: 0
-  InnerPointSet: 0
-  InnerPoint: {x: 0.000000104517056, y: 0, z: 1.5162001}
-  InnerPointDistance: 1.5162001
+  InnerPointSet: 1
+  InnerPoint: {x: -0.05400002, y: 1.36144, z: 1.5162001}
+  InnerPointDistance: 2.08986
   InnerPointInside: 0
   boxCollider: {fileID: 1993786470}
   center: {x: 0, y: 0, z: 0}
@@ -11798,6 +11640,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1993786476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993786468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dadb80371ee145768beb9f378d876e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundClip: {fileID: 8300000, guid: 51d4744285a564b569623ebb6f90ba55, type: 3}
+  audioSource: {fileID: 212828994}
 --- !u!1 &2030321204
 GameObject:
   m_ObjectHideFlags: 0

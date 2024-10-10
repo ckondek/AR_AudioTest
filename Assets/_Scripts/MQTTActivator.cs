@@ -15,6 +15,8 @@ public class MQTTActivator : MonoBehaviour
 
     void Start()
     {
+        mqttManager = GameObject.FindGameObjectWithTag("MQTT").GetComponentInChildren<MQTTManager>();
+        Debug.Log("MQTT Manager found");
         if (mqttManager == null)
         {
             Debug.LogError("MQTTManager not assigned.");
@@ -26,11 +28,11 @@ public class MQTTActivator : MonoBehaviour
     void Update()
     {
            // Verarbeite alle in der Warteschlange befindlichen Aktionen
-        while (actionsQueue.Count > 0)
-        {
+       while (actionsQueue.Count > 0)
+       {
             System.Action action = actionsQueue.Dequeue();
-            action.Invoke();
-        }
+         action.Invoke();
+       }
 
         // Überprüfe, ob die Taste "A" gedrückt wurde
         if (Input.GetKeyDown(KeyCode.A))
@@ -60,14 +62,19 @@ public class MQTTActivator : MonoBehaviour
 private void OnMqttMessageReceived(string topic, string message)
     {
         // Füge die Aktion zur Warteschlange hinzu
+        Debug.Log("MQTT Message received"+ topic + message);
         if (topic == activationTopic && message == "activate")
         { Debug.Log("Activation Message receiced");
-            actionsQueue.Enqueue(() => ActivateObject());
+            actionsQueue.Enqueue(() => 
+            ActivateObject());
         }
         else if (topic == deactivationTopic && message == "deactivate")
         {
-            actionsQueue.Enqueue(() => DeactivateObject());
+            actionsQueue.Enqueue(() => 
+            DeactivateObject());
         }
+        else 
+        {Debug.Log("Nothing done");}
     }
   
      private void ActivateObject()

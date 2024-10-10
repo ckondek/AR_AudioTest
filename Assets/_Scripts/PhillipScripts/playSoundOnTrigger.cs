@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlaySoundOnTrigger : MonoBehaviour
 {
     public AudioClip soundClip; // The sound clip to play
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
     void Start()
     {

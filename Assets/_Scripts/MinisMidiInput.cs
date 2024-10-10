@@ -19,6 +19,8 @@ public class MinisMidiInput : MonoBehaviour
 
     void Start()
     {
+MQTTManager = GameObject.FindGameObjectWithTag("MQTT").GetComponentInChildren<MQTTManager>();
+
         InputSystem.onDeviceChange += (device, change) =>
         {
             if (change != InputDeviceChange.Added) return;
