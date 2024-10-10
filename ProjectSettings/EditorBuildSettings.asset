@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/_Scenes/240815_rainforest3.unity
     guid: 72c29f1039de447f1b8f07ddd9d2404f
   - enabled: 1
-    path: Assets/_Scenes/PhillipScenes/240713_SculptureGarden.unity
-    guid: 2de04e879f4b84b4fa8ada3e8311730d
+    path: Assets/241010_scultpure.unity
+    guid: b130bc38832694769bbac37466b3605d
   - enabled: 1
     path: Assets/Scenes/241007_MidiTropfen.unity
     guid: 6356adb99af9e477dadd69344a6080ca

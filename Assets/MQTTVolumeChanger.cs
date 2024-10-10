@@ -59,6 +59,7 @@ public AudioSource[] allAudioSources;
         else
         {
             mqttManager.PublishMessage(volumeDownTopic, volume.ToString());
+            Debug.Log("Lautstärke geändert nach unten");
         }
 
         Debug.Log("Aktuelle Lautstärke: " + volume);

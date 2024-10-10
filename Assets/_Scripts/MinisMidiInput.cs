@@ -40,10 +40,10 @@ MQTTManager = GameObject.FindGameObjectWithTag("MQTT").GetComponentInChildren<MQ
     {
      if (noteList.Contains(hittedNote) && !hasExecuted)
         {
-            Debug.Log("Yay");
+            Debug.Log("Note contained in List");
             // Nachricht senden
             SendMqttMessage(hittedNote.ToString());
-            SendMqttMessage("activate");
+            //SendMqttMessage("activate");
             
             // Status auf 'true' setzen, um anzuzeigen, dass die Funktion ausgeführt wurde
             hasExecuted = true;

@@ -6,8 +6,8 @@ using System.Text;
 public class MQTTGameObjectActivator : MonoBehaviour
 {
     public MQTTManager mqttManager;
-    public string listenTopic = "unity/activate/object";
-    public string expectedMessage = "ACTIVATE";
+    public string listenTopic = "unity/midi/activate";
+    public string expectedMessage;
     public GameObject targetObject;
 
     // Flag, um zu verfolgen, ob das GameObject aktiviert oder deaktiviert werden soll
@@ -37,6 +37,7 @@ public class MQTTGameObjectActivator : MonoBehaviour
         {
             Debug.Log("Neue Nachricht empfangen: " + message);
             shouldActivate = (message == expectedMessage);
+            Debug.Log("should activate" + shouldActivate);
         }
     }
 
@@ -45,8 +46,10 @@ public class MQTTGameObjectActivator : MonoBehaviour
         // Aktivieren oder Deaktivieren des GameObjects im Haupt-Thread
         if (targetObject != null && shouldActivate == true)
         {
-            targetObject.SetActive(shouldActivate);
-            Debug.Log("GameObject " + targetObject.name + " wurde " + (shouldActivate ? "aktiviert" : "deaktiviert"));
+            targetObject.GetComponent<AudioSource>().Play();
+            Debug.Log(targetObject + "is playing");
+            if (!targetObject.GetComponent<AudioSource>().isPlaying)
+            Debug.Log("GameObject " + targetObject.name + " spielt " + (shouldActivate ? "aktiviert" : "deaktiviert"));
             // Reset the flag to prevent continuous activation/deactivation
             shouldActivate = false;
         }
