@@ -279,10 +279,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ead39db7074491588ed0710a34e089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mqttManager: {fileID: 199438382}
-  activationTopic: unity/midi1/activate
-  deactivationTopic: unity/midi1/activate
-  activationObject: {fileID: 1970948453}
 --- !u!114 &199438382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,10 +347,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ead39db7074491588ed0710a34e089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mqttManager: {fileID: 199438382}
-  activationTopic: derfabs/unity/midi7/activate
-  deactivationTopic: derfabs/unity/midi7/activate
-  activationObject: {fileID: 2076199088}
 --- !u!114 &199438386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,10 +359,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ead39db7074491588ed0710a34e089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mqttManager: {fileID: 199438382}
-  activationTopic: unity/midi2/activate
-  deactivationTopic: unity/midi2/activate
-  activationObject: {fileID: 581386987}
 --- !u!114 &199438387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,10 +371,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ead39db7074491588ed0710a34e089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mqttManager: {fileID: 199438382}
-  activationTopic: derfabs/unity/midi9/activate
-  deactivationTopic: derfabs/unity/midi9/activate
-  activationObject: {fileID: 231593454}
 --- !u!114 &199438388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,10 +383,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ead39db7074491588ed0710a34e089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mqttManager: {fileID: 199438382}
-  activationTopic: unity/midi5/activate
-  deactivationTopic: unity/midi5/activate
-  activationObject: {fileID: 846662765}
 --- !u!114 &199438389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,10 +395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ead39db7074491588ed0710a34e089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mqttManager: {fileID: 199438382}
-  activationTopic: derfabs/unity/midi8/activate
-  deactivationTopic: derfabs/unity/midi8/activate
-  activationObject: {fileID: 663941988}
 --- !u!114 &199438390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,10 +407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ead39db7074491588ed0710a34e089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mqttManager: {fileID: 199438382}
-  activationTopic: derfabs/unity/midi6/activate
-  deactivationTopic: derfabs/unity/midi6/activate
-  activationObject: {fileID: 2095477502}
 --- !u!114 &199438391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,10 +419,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ead39db7074491588ed0710a34e089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mqttManager: {fileID: 199438382}
-  activationTopic: unity/midi3/activate
-  deactivationTopic: unity/midi3/activate
-  activationObject: {fileID: 937525178}
 --- !u!114 &199438392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,10 +431,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ead39db7074491588ed0710a34e089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mqttManager: {fileID: 199438382}
-  activationTopic: unity/midi4/activate
-  deactivationTopic: unity/midi4/activate
-  activationObject: {fileID: 82994240}
 --- !u!1 &231593454
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,7 +1362,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &765328896
 Transform:
   m_ObjectHideFlags: 0
@@ -2639,7 +2603,7 @@ GameObject:
   - component: {fileID: 1054073291}
   m_Layer: 0
   m_Name: Audio Player
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
