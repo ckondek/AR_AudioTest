@@ -253,7 +253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &206376114
 RectTransform:
   m_ObjectHideFlags: 0
@@ -714,7 +714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &363498775
 Transform:
   m_ObjectHideFlags: 0
@@ -1087,7 +1087,7 @@ RectTransform:
   m_Father: {fileID: 703407433}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.381, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3155,11 +3155,13 @@ MonoBehaviour:
   loadSceneTopic: unity/scene/load
   unloadSceneTopic: unity/scene/unload
   scenesToLoad:
-  - 160824_crowd_nacht
-  - 240815_rainforest3
-  - 240713_SculptureGarden
-  - 241007_MidiTropfen
-  - 241007_Sinus
+  - Sinus 0.2
+  - Sinus 0.3
+  - Sinus 0.4
+  - Sinus 0.5
+  - Sinus 0.6
+  - Sinus 0.7
+  - Sinus 0.8
 --- !u!4 &1543905021
 Transform:
   m_ObjectHideFlags: 0
@@ -3244,8 +3246,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1543753539}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.381, y: 0}
+  m_AnchorMax: {x: 0.381, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

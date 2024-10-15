@@ -1,38 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
 
 public class LogOnScreen : MonoBehaviour
+
 {
+    public TMP_Text debugLogText; // Das Textfeld, in das die Debug-Nachrichten ausgegeben werden
+    private string logMessages = ""; // Speichert die bisherigen Log-Nachrichten
 
-
-   public uint qsize = 15;  // number of messages to keep
-   public int fontSize = 40;
-   Queue myLogQueue = new Queue();
-
-   void Start() {
-      Debug.Log("Started up logging.");
-   }
-
-   void OnEnable() {
-      Application.logMessageReceived += HandleLog;
-   }
-
-   void OnDisable() {
-      Application.logMessageReceived -= HandleLog;
-   }
-
-   void HandleLog(string logString, string stackTrace, LogType type) {
-      myLogQueue.Enqueue("[" + type + "] " + logString);
-      if(type == LogType.Exception) myLogQueue.Enqueue(stackTrace);
-      while (myLogQueue.Count > qsize)
-         myLogQueue.Dequeue();
+    void OnEnable()
+    {
+        // Melde die Methode HandleLog an, um auf Konsolennachrichten zu reagieren
+        Application.logMessageReceived += HandleLog;
     }
 
-   void OnGUI() {
-      GUI.skin.label.fontSize = fontSize;
-      GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
-      GUILayout.Label("\n" + string.Join("\n", myLogQueue.ToArray()));
-      GUILayout.EndArea();
-   }
+    void OnDisable()
+    {
+        // Entferne die Methode HandleLog, um das Abfangen von Nachrichten zu stoppen
+        Application.logMessageReceived -= HandleLog;
+    }
+
+ 
+    // Methode zum Hinzufügen einer Debug-Nachricht
+   void HandleLog(string logString, string stackTrace, LogType type)
+    {
+        if (type == LogType.Log)
+        {
+            logMessages += $"{System.DateTime.Now}: {logString}\n";  // Füge nur normale Logs hinzu
+            UpdateLogText();  // Aktualisiere das Textfeld
+        }
+    
+    }
+
+    // Aktualisiert das TextMeshPro-Textfeld mit den Log-Nachrichten
+    private void UpdateLogText()
+    {
+        debugLogText.text = logMessages; // Setze den Text des TMP_Text-Objekts
+    }
 }
+

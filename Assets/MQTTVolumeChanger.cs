@@ -6,23 +6,22 @@ using UnityEngine;
 public class MQTTVolumeChanger : MonoBehaviour
 {
     public MQTTManager mqttManager; // Verweis auf den MQTTManager
-    public string volumeUpTopic = "unity/volume/lauter";  // MQTT Topic zum Erhöhen der Lautstärke
-    public string volumeDownTopic = "unity/volume/leiser"; // MQTT Topic zum Verringern der Lautstärke
-
-    public float volume = 1.0f; // Aktuelle Lautstärke (von 0.0f bis 1.0f)
+    public string volumeTopic = "unity/volume";  // MQTT Topic zum Verändern der Lautstärke
+    public AudioManager audioManager; // Verweis auf den AudioManager
+    
+    public float volume = 0.5f; // Aktuelle Lautstärke (von 0.0f bis 1.0f)
     private const float volumeChangeAmount = 0.05f; // Menge, um die die Lautstärke geändert wird
-    public GameObject[] allAudioSources;
-
-    // Queue für Nachrichten, die im Hauptthread verarbeitet werden sollen
-    private Queue<Action> actionQueue = new Queue<Action>();
+    private Queue<Action> actionQueue = new Queue<Action>(); // Queue für Hauptthread-Aktionen
 
     void Start()
     {
-        // Überprüfen, ob der MQTTManager zugewiesen wurde, ansonsten suchen
+        // MQTTManager holen
         if (mqttManager == null)
         {
             mqttManager = FindObjectOfType<MQTTManager>();
         }
+
+    
 
         if (mqttManager == null)
         {
@@ -30,16 +29,26 @@ public class MQTTVolumeChanger : MonoBehaviour
         }
         else
         {
-            // Abonniere die entsprechenden Topics für Lautstärkeänderungen
-            mqttManager.OnMqttMessageReceived += OnMessageReceived;
+            mqttManager.OnMqttMessageReceived += OnMessageReceived; // Abonniere Topic
         }
     }
 
     void Update()
     {
-        allAudioSources = GameObject.FindGameObjectsWithTag("Audio");
+         if (audioManager == null)
+        {
+            audioManager = FindObjectOfType<AudioManager>();
+        }
+        // Verarbeite die Aktionen im Hauptthread
+        lock (actionQueue)
+        {
+            while (actionQueue.Count > 0)
+            {
+                actionQueue.Dequeue().Invoke();
+            }
+        }
 
-        // Lautstärkeänderung mit den Pfeiltasten
+        // Lautstärkeänderung über Tastatur
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             ChangeVolume(1);
@@ -48,45 +57,29 @@ public class MQTTVolumeChanger : MonoBehaviour
         {
             ChangeVolume(-1);
         }
-
-        // Verarbeite alle in die Queue eingereihten Aktionen (nur im Hauptthread)
-        lock (actionQueue)
-        {
-            while (actionQueue.Count > 0)
-            {
-                actionQueue.Dequeue().Invoke();
-            }
-        }
     }
 
-    private void ChangeVolume(int direction)
+    public void ChangeVolume(int direction)
     {
-        // Berechnung der neuen Lautstärke
+        // Lautstärke berechnen
         volume += direction * volumeChangeAmount;
-        volume = Mathf.Clamp(volume, 0.0f, 1.0f); // Lautstärke auf den Bereich von 0.0 bis 1.0 begrenzen
+        volume = Mathf.Clamp(volume, 0.0f, 1.0f); // Begrenzen zwischen 0 und 1
 
-        // Sende die aktualisierte Lautstärke über MQTT
-        //if (direction > 0)
-        //{
-            mqttManager.PublishMessage(volumeUpTopic, volume.ToString());
-        //}
-        //else
-        //{
-        //    mqttManager.PublishMessage(volumeDownTopic, volume.ToString());
-        //    Debug.Log("Lautstärke geändert nach unten");
-        //}
+        // Benachrichtige den AudioManager über die neue Lautstärke
+        if (audioManager != null)
+        {
+            audioManager.UpdateAudioSourcesVolume(volume);
+        }
 
-        Debug.Log("Aktuelle Lautstärke: " + volume);
+        // MQTT-Nachricht senden
+        mqttManager.PublishMessage(volumeTopic, volume.ToString("F2"));
+        Debug.Log("Lautstärke geändert: " + volume);
     }
 
     private void OnMessageReceived(string topic, string message)
     {
-        // Nachricht verarbeiten, falls sie von den relevanten Topics kommt
-        Debug.Log($"Nachricht empfangen auf Thema: {topic}, Nachricht: {message}");
-
-        if (topic == volumeUpTopic || topic == volumeDownTopic)
+        if (topic == volumeTopic)
         {
-            // Füge die Aktion zur Queue hinzu, damit sie im Hauptthread ausgeführt wird
             lock (actionQueue)
             {
                 actionQueue.Enqueue(() => StartCoroutine(HandleVolumeChange(message)));
@@ -96,26 +89,22 @@ public class MQTTVolumeChanger : MonoBehaviour
 
     private IEnumerator HandleVolumeChange(string message)
     {
-        // Konvertiere die Nachricht in einen Float-Wert
         if (float.TryParse(message, out float newVolume))
         {
-            newVolume = Mathf.Clamp(newVolume, 0.0f, 1.0f); // Sicherstellen, dass die Lautstärke zwischen 0.0 und 1.0 bleibt
-            Debug.Log("Neue Lautstärke aus Nachricht: " + newVolume);
+            newVolume = Mathf.Clamp(newVolume, 0.0f, 1.0f);
+            volume = newVolume; // Aktualisiere die Lautstärke
 
-            // Finde alle Audioquellen im Hauptthread und aktualisiere die Lautstärke
-            foreach (GameObject audioObject in allAudioSources)
+            // Benachrichtige den AudioManager über die neue Lautstärke
+            if (audioManager != null)
             {
-                AudioSource audioSource = audioObject.GetComponent<AudioSource>();
-
-                if (audioSource != null)
-                {
-                    audioSource.volume = newVolume;
-                }
+                audioManager.UpdateAudioSourcesVolume(volume);
             }
+
+            Debug.Log("MQTT Lautstärke empfangen: " + volume);
         }
         else
         {
-            Debug.LogError("Fehler: Ungültige Lautstärkenachricht erhalten: " + message);
+            Debug.LogError("Fehlerhafte Lautstärkenachricht: " + message);
         }
 
         yield return null;
@@ -123,7 +112,7 @@ public class MQTTVolumeChanger : MonoBehaviour
 
     void OnDestroy()
     {
-        // Entferne den Event-Handler, wenn das Objekt zerstört wird
+        // Entferne Event-Handler bei Zerstörung
         if (mqttManager != null)
         {
             mqttManager.OnMqttMessageReceived -= OnMessageReceived;

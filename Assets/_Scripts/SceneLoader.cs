@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 using System.Collections.Generic;
 
 public class SceneHandler : MonoBehaviour
@@ -17,6 +18,8 @@ public class SceneHandler : MonoBehaviour
     private bool requestLoad = false;
     private bool requestUnload = false;
     private bool requestLoadNumber = false;
+    public static event Action<Scene> OnSceneLoadedEvent; // Neues Event für geladene Szenen
+
 
     void Start()
     {
@@ -199,7 +202,19 @@ private void LoadNextScene()
     }
 }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode) 
-    {SceneManager.SetActiveScene(scene);}
 
-}
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode) 
+    {
+        SceneManager.SetActiveScene(scene);
+       // Diese Methode kann verwendet werden, um die nächste Szene zu positionieren
+        ScenePositioner scenePositioner = FindObjectOfType<ScenePositioner>();
+        if (scenePositioner != null)
+        {
+            scenePositioner.PositionSceneToImage();
+        }
+    }
+    
+    
+    }
+
+
