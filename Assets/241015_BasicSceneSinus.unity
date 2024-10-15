@@ -3155,14 +3155,13 @@ MonoBehaviour:
   loadSceneTopic: unity/scene/load
   unloadSceneTopic: unity/scene/unload
   scenesToLoad:
-  - Plate0.2
-  - Plate0.3
-  - Plate0.4
-  - Plate0.5
-  - Plate0.6
-  - Plate0.7
-  - Plate0.9
-  - Plate1
+  - Sinus 0.2
+  - Sinus 0.3
+  - Sinus 0.4
+  - Sinus 0.5
+  - Sinus 0.6
+  - Sinus 0.7
+  - Sinus 0.8
 --- !u!4 &1543905021
 Transform:
   m_ObjectHideFlags: 0

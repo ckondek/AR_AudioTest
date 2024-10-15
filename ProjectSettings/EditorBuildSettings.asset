@@ -29,27 +29,54 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/BasicSceneSinus.unity
     guid: 8c09d2e3fd186446595d2f8675cb77e1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Sinus 0.2.unity
     guid: 8263048faa63e443b832d1f92214b039
-  - enabled: 1
+  - enabled: 0
     path: Assets/Sinus 0.3.unity
     guid: 8f7d53f74d66f4a4ab06bb1827aa1379
-  - enabled: 1
+  - enabled: 0
     path: Assets/Sinus 0.4.unity
     guid: 589d2614be4eb43a08abb7c3d2df6e5a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Sinus 0.5.unity
     guid: 888b12bff47064ce4aa9eb14fbd21920
-  - enabled: 1
+  - enabled: 0
     path: Assets/Sinus 0.6.unity
     guid: 729bad585bd064a9fa8f077850df69ee
-  - enabled: 1
+  - enabled: 0
     path: Assets/Sinus 0.7.unity
     guid: 08574b2e2e1484b309c8b665a4f2d87d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Sinus 0.8.unity
     guid: 36494193e1445417a908d6be62a55a11
+  - enabled: 1
+    path: Assets/Plate0.2.unity
+    guid: 6b5753a9ce54f40fda78fa4439de8b4e
+  - enabled: 1
+    path: Assets/Plate0.3.unity
+    guid: eed85a21364594c54883edff582385d7
+  - enabled: 1
+    path: Assets/Plate0.4.unity
+    guid: 9222650e34d0b4b92aca27c53bbe0bfe
+  - enabled: 1
+    path: Assets/Plate0.5.unity
+    guid: 22a7574eeb50d430b9550e40017f3f2a
+  - enabled: 1
+    path: Assets/Plate0.6.unity
+    guid: 57d81909234594ba3bdb8e092a1e8351
+  - enabled: 1
+    path: Assets/Plate0.7.unity
+    guid: 440973f2c28be47668dd8ac1d0d17feb
+  - enabled: 1
+    path: Assets/Plate0.8.unity
+    guid: a6693a91ed23949e3aba2ea130aacbed
+  - enabled: 1
+    path: Assets/Plate0.9.unity
+    guid: 1ea509bc73d20470099325ce3d42dd95
+  - enabled: 1
+    path: Assets/Plate1.unity
+    guid: af5c943bc75bd42f2b9892be832edf05
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1aacb881599e84d2e8a90f7c529a9646, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 728de2c8d632b4bd494468a7e942aa6a, type: 2}
