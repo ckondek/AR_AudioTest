@@ -90,8 +90,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 2.5
-  MaxDistance: 3
+  MinDistance: 2
+  MaxDistance: 3.5
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -213,8 +213,6 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 7546337905522052307, guid: 50ef7a85ed84c4c0d9209014621767dd, type: 2}
-    value: {fileID: 72958780383923668}
   - key: {fileID: 9102136251585396948, guid: 50ef7a85ed84c4c0d9209014621767dd, type: 2}
     value: {fileID: 4001074859032531963}
   m_ExposedReferences:
@@ -408,8 +406,6 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: -5064310511326042696, guid: 50be27fa8cb2e4d91b2cc1e9cfe3b671, type: 2}
-    value: {fileID: 72958780383923668}
   - key: {fileID: -7948424640453051548, guid: 50be27fa8cb2e4d91b2cc1e9cfe3b671, type: 2}
     value: {fileID: 4001074859032531963}
   m_ExposedReferences:
