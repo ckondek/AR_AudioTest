@@ -166,6 +166,7 @@ GameObject:
   - component: {fileID: 500013007}
   - component: {fileID: 500013006}
   - component: {fileID: 500013008}
+  - component: {fileID: 500013009}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -221,6 +222,19 @@ MonoBehaviour:
   m_SerializedLibrary: {fileID: 11400000, guid: 286e00332ab4e42988516fa09a1a2dd6, type: 2}
   m_MaxNumberOfMovingImages: 1
   m_TrackedImagePrefab: {fileID: 6035099445555108627, guid: 53e9df5c272eb467f964a8dc061b3573, type: 3}
+--- !u!114 &500013009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500013005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a1ca79bc91024d16aac80307cf329a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackedImageManager: {fileID: 500013008}
 --- !u!1 &1306834772
 GameObject:
   m_ObjectHideFlags: 0
