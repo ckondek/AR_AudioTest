@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6909304453661983204}
   - component: {fileID: -5630828072527104345}
   - component: {fileID: 5309978451668488752}
+  - component: {fileID: 1649871562183364209}
   m_Layer: 0
   m_Name: crickePrefab_audio
   m_TagString: Untagged
@@ -31,8 +32,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.14, y: 0.14, z: 0.14}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -129,8 +130,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -144,7 +145,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4f6b476133e3346ed900e854a3a1114f, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -165,8 +166,8 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.1126709
-      value: 1.0129395
+      time: 0.16383362
+      value: 1
       inSlope: -4.0016
       outSlope: -4.0016
       tangentMode: 0
@@ -183,7 +184,7 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.96655273
+      time: 0.9639282
       value: 0
       inSlope: -0.2501
       outSlope: -0.2501
@@ -239,3 +240,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1649871562183364209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5321698940052865648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6b8e99666b5e4035957c3fd4c7eeaec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 4f6b476133e3346ed900e854a3a1114f, type: 3}
+  - {fileID: 8300000, guid: c26b00c0ea5b54211bd8e0ce48620640, type: 3}
+  - {fileID: 8300000, guid: f451b4207e978452cbfcece34d79bc76, type: 3}
+  - {fileID: 8300000, guid: 194639cd4dc774da693c9364ffd6ba36, type: 3}
+  - {fileID: 8300000, guid: 71f501a6d66904e0f8d7f1d6fa54ba5a, type: 3}
+  - {fileID: 8300000, guid: d840d0f0f752f4c5485d4b0287cd2c2c, type: 3}
+  - {fileID: 8300000, guid: 4a8868a46e437495ea247835e8bbe0ae, type: 3}
+  - {fileID: 8300000, guid: 7421a8edd1d5b4e30aea97282e2d1cc6, type: 3}
+  - {fileID: 8300000, guid: 91efe8dfcf3be44d6bb6039946555f10, type: 3}
