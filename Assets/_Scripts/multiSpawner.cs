@@ -10,10 +10,12 @@ public class multiSpawner : MonoBehaviour
     public int amount;
     public float xStart;
     public float xEnd;
-     public float yStart;
+    public float yStart;
     public float yEnd;
-     public float zStart;
+    public float zStart;
     public float zEnd;
+
+    private List<GameObject> spawnedList = new List<GameObject>();
    
 
 
@@ -23,7 +25,8 @@ public class multiSpawner : MonoBehaviour
         for (int x = 0; x < amount; x++)
         {
             int index = (int)Random.Range(0, objects.Length);
-            Instantiate(objects[index], new Vector3(Random.Range(xStart, xEnd),Random.Range(yStart, yEnd), Random.Range(zStart, zEnd)), Quaternion.identity);
+            GameObject obj = Instantiate(objects[index], new Vector3(Random.Range(xStart, xEnd),Random.Range(yStart, yEnd), Random.Range(zStart, zEnd)), Quaternion.identity);
+            spawnedList.Add(obj);
            
         }
 
