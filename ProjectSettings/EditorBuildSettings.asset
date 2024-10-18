@@ -48,9 +48,6 @@ EditorBuildSettings:
     path: Assets/Scenes/flyingSopran.unity
     guid: eb37df3cdd282487982f372c70625958
   - enabled: 0
-    path: Assets/Scenes/hbf.unity
-    guid: 12f6189a1e540441686be48f767157e9
-  - enabled: 0
     path: Assets/Scenes/crowd.unity
     guid: 5caa5586115844661a929354304358d2
   - enabled: 0
